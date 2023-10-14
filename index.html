@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Print</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b967a10861.js" crossorigin="anonymous"></script>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="images/logo-circle.png">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="images/logo-png.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo Print</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Əsas Səhifə</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Məhsullarımız
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Qələmlər</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Karandaşlar</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Stəkanlar</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Qablar</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="/products">Bütün Məhsullarımız</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Haqqımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Əlaqə</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="tel:994514017799" class="nav-link"><i class="fa-solid fa-phone"></i> +994 51 401 77
+                                99</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/products" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i><span
+                                    class="d-lg-none">Axtar</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Swiper -->
+
+    <div class="swiper home-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/slide-1.jpg" alt="Slide 1"></div>
+            <div class="swiper-slide"><img src="images/slide-2.jpg" alt="Slide 2"></div>
+        </div>
+        <div class="swiper-button swiper-button-next"></div>
+        <div class="swiper-button swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- WhatsApp Icon -->
+
+    <a href="https://api.whatsapp.com/send?phone=994514017799" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- About Us -->
+
+    <div class="about-us" id="about">
+        <div class="texts">
+            <h1 class="header">Niyə «Logo Print»?</h1>
+
+            <div class="row">
+                <div class="about-us-card col-6 col-md-12">
+                    <div class="icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="descriptions">
+                        <h1>Yüksək Xidmət</h1>
+                        <p>İşlərimizi vaxtında və dəqiq yerinə yetiririk</p>
+                    </div>
+                </div>
+                <div class="about-us-card col-6 col-md-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                    </div>
+                    <div class="descriptions">
+                        <h1>Sərfəli Qiymət</h1>
+                        <p>Müştərinin büdcəsinə uyğun təkliflərimiz</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="about-us-card col-6 col-md-12">
+                    <div class="icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="descriptions">
+                        <h1>Onlayn Sifariş</h1>
+                        <p>WhatsApp ilə sürətli sifariş</p>
+                    </div>
+                </div>
+                <div class="about-us-card col-6 col-md-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="descriptions">
+                        <h1>Yüksək Keyfiyyət</h1>
+                        <p>İşlərin keyfiyyətinə zəmanət</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Products -->
+
+    <div class="products">
+        <h1 class="header">Bizim Məhsullar</h1>
+        <div class="row">
+            <div class="card-padding col-12 col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/story-11.jpg" class="card-img-top" alt="Story 11">
+                    <div class="card-body">
+                        <h5 class="card-title">Cüt qar birdəfəlik stəkan</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-padding col-12 col-sm-3">
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="images/story-11.jpg" class="card-img-top" alt="Story 11">
+                    <div class="card-body">
+                        <h5 class="card-title">Cüt qar birdəfəlik stəkan</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-padding col-12 col-sm-3">
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="images/story-11.jpg" class="card-img-top" alt="Story 11">
+                    <div class="card-body">
+                        <h5 class="card-title">Cüt qar birdəfəlik stəkan</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-padding col-12 col-sm-3">
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="images/story-11.jpg" class="card-img-top" alt="Story 11">
+                    <div class="card-body">
+                        <h5 class="card-title">Cüt qar birdəfəlik stəkan</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card-padding col-12 col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/story-11.jpg" class="card-img-top" alt="Story 11">
+                    <div class="card-body">
+                        <h5 class="card-title">Cüt qar birdəfəlik stəkan</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-padding col-12 col-sm-3">
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="images/story-11.jpg" class="card-img-top" alt="Story 11">
+                    <div class="card-body">
+                        <h5 class="card-title">Cüt qar birdəfəlik stəkan</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-padding col-12 col-sm-3">
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="images/story-11.jpg" class="card-img-top" alt="Story 11">
+                    <div class="card-body">
+                        <h5 class="card-title">Cüt qar birdəfəlik stəkan</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-padding col-12 col-sm-3">
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="images/story-11.jpg" class="card-img-top" alt="Story 11">
+                    <div class="card-body">
+                        <h5 class="card-title">Cüt qar birdəfəlik stəkan</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div class="services-section">
+        <h1 class="header">Bizim Xidmətlərimiz</h1>
+
+        <div class="services">
+            <div class="row">
+                <div class="p-2 col-12 col-sm-4">
+                    <div class="service-1 service">
+                        <h1>Qələmlərin üstündə loqo</h1>
+                    </div>
+                </div>
+
+                <div class="p-2 col-12 col-sm-4">
+                    <div class="service-2 service">
+                        <h1>Stəkanlar üstündə loqo</h1>
+                    </div>
+                </div>
+
+                <div class="p-2 col-12 col-sm-4">
+                    <div class="service-3 service">
+                        <h1>Dəftərlər üstündə loqo</h1>
+                    </div>
+                </div>
+
+                <div class="p-2 col-12 col-sm-4">
+                    <div class="service-1 service">
+                        <h1>Qələmlərin üstündə loqo</h1>
+                    </div>
+                </div>
+
+                <div class="p-2 col-12 col-sm-4">
+                    <div class="service-2 service">
+                        <h1>Stəkanlar üstündə loqo</h1>
+                    </div>
+                </div>
+
+                <div class="p-2 col-12 col-sm-4">
+                    <div class="service-3 service">
+                        <h1>Dəftərlər üstündə loqo</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+
+    <div class="contact" id="contact">
+
+        <div class="texts">
+            <h1>9122 Wood Dr.Bismarck, ND 58501, New York, USA</h1>
+
+            <hr>
+
+            <div class="email">
+                <p class="contact-info">E-MAIL</p>
+                <p class="contact-holder"><a href="mailto:info@logoprint.az">info@logoprint.az</a></p>
+            </div>
+
+            <div class="phone">
+                <p class="contact-info">TELEFON</p>
+                <p class="contact-holder"><a href="tel:994514017799">+994 51 401 77 99</a></p>
+            </div>
+
+            <button type="button" class="btn btn-outline-danger"
+                onclick="window.location = 'https://api.whatsapp.com/send?phone=994514017799'">Əlaqə Saxla</button>
+        </div>
+
+        <div id="map"></div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-section">
+                        <h3>
+                            Sürətli Keçidlər</h3>
+                        <ul>
+                            <li><a href="/">Əsas Səhifə</a></li>
+                            <li><a href="#about">Haqqımızda</a></li>
+                            <li><a href="/products">Məhsullarımız</a></li>
+                            <li><a href="#contact">Əlaqə Saxla</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="footer-section">
+                        <h3>Məhsullarımız</h3>
+                        <ul>
+                            <li><a href="/products">Cüt Qat Birdəfəlik Stəkan</a></li>
+                            <li><a href="/products">Şəffaf Birdəfəlik Stəkan</a></li>
+                            <li><a href="/products">Çaynik və Stəkan Dəsti</a></li>
+                            <li><a href="/products">Qab Məhsulları</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="footer-section">
+                        <h3>Abonə Ol</h3>
+                        <div class="social-icons">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        &copy; 2023 Logo Print. Salman Sadıxzadə tərəfindən hazırlanmışdır.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

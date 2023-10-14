@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800, 800i, 900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    background-color: transparent;
+    height: 100px;
+    transition: .2s;
+    z-index: 10000;
+}
+
+nav.scrolled {
+    background-color: #fff;
+    box-shadow: 0 0.10rem 0 rgba(0, 0, 0, .125);
+}
+
+.nav-item {
+    padding: 20px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: #000;
+}
+
+.fa-magnifying-glass {
+    padding-right: 20px;
+}
+
+.active {
+    color: #ec1d6f !important;
+}
+
+.navbar a:hover {
+    color: #ec1d6f;
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+/* Swiper */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.25rem 0 rgba(0, 0, 0, .325);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ec1d6f !important;
+}
+
+/* WhatsApp Icon */
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #25D366;
+    color: #fff;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    z-index: 10000;
+    animation: jump 2.5s infinite;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+    color: #fff;
+}
+
+.fa-whatsapp {
+    margin-top: 1px;
+}
+
+.whatsapp-btn {
+    text-decoration: none !important;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* About Us */
+
+.about-us {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.about-us .about-us-card {
+    background-color: #ec1d6f;
+    width: 400px;
+    height: 100px;
+    margin-left: 170px;
+    margin-top: 50px;
+}
+
+.row {
+    width: 100% !important;
+}
+
+.about-us .about-us-card:hover {
+    box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, .325);
+}
+
+.about-us .descriptions {
+    margin-left: 70px;
+    margin-top: -55px;
+    color: #fff;
+}
+
+.about-us .descriptions h1 {
+    font-size: 25px;
+}
+
+.about-us .icon {
+    padding-top: 20px;
+    transition: .3s;
+}
+
+.about-us .icon:hover {
+    color: #ec1d6f;
+}
+
+.about-us .icon i {
+    font-size: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+/* Products */
+
+.products {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.header {
+    font-weight: bold;
+    text-align: center;
+    color: #ec1d6f;
+}
+
+.products .card-title {
+    font-weight: bold;
+    color: #ec1d6f;
+}
+
+.products img {
+    transition: .2s;
+}
+
+.products img:hover {
+    transform: scale(1.15);
+}
+
+.products .card-padding {
+    padding-left: 40px;
+}
+
+.products .card {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.products .row {
+    padding-top: 50px;
+}
+
+/* Services */
+
+.services-section {
+    padding-bottom: 50px;
+}
+
+.services {
+    padding-top: 40px;
+}
+
+.services h1 {
+    font-size: 25px;
+    color: #fff;
+    margin-top: 155px;
+    margin-left: 30px;
+    position: absolute;
+}
+
+.services .row {
+    margin-left: 13.9px;
+    max-width: 99%;
+}
+
+.service {
+    height: 200px;
+    width: 400px;
+    background-size: cover;
+    transition: .7s;
+}
+
+.service:hover {
+    transform: scale(1.1);
+}
+
+.service-1 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(images/services-1.jpg);
+}
+
+.service-2 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(images/services-2.jpg);
+}
+
+.service-3 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(images/services-3.jpg);
+}
+
+/* Contact Us */
+
+.contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+}
+
+.contact h1 {
+    width: 550px;
+    font-size: 32px;
+}
+
+.contact-info {
+    font-size: 10px;
+    margin-top: -25px;
+    position: absolute;
+    color: #999;
+}
+
+.contact hr {
+    width: 550px;
+    margin-top: 50px;
+}
+
+.contact-holder a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-holder a:hover {
+    color: #ec1d6f;
+}
+
+.email {
+    margin-top: 80px;
+}
+
+.phone {
+    margin-left: 300px;
+    margin-top: -43px;
+}
+
+.contact .btn {
+    margin-top: 30px;
+    width: 150px;
+}
+
+#map {
+    height: 600px;
+    width: 600px;
+    margin-left: 700px;
+    margin-top: -450px;
+}
+
+.contact .texts {
+    margin-top: 150px;
+}
+
+.leaflet-control-attribution {
+    z-index: 1;
+}
+
+/* Footer */
+
+footer {
+    background-color: #ec1d6f;
+    padding: 20px;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.3s;
+}
+
+.footer-section ul li:hover,
+.footer-section ul li:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+}
+
+.footer-section a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .social-icons {
+    margin-top: 10px;
+}
+
+.footer-section .social-icons a {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 50px;
+    padding-bottom: 40px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-section ul li a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Mobile Version */
+
+@media (max-width: 700px) {
+
+    /* Navigation Bar */
+
+    .navbar-brand img {
+        width: 110px;
+    }
+
+    .navbar-brand {
+        padding: 0;
+    }
+
+    .navbar {
+        background-color: #fff;
+        z-index: 100000;
+    }
+
+    /* Swiper */
+
+    .swiper {
+        height: 100%;
+        margin-top: 100px;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 25px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* About Us */
+
+    .about-us .about-us-card {
+        margin-left: 0;
+        height: 110px;
+        width: 100%;
+    }
+
+    /* Products */
+
+    .products .card-padding {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    /* Services */
+
+    .services .service {
+        width: 100%;
+    }
+
+    .services .row {
+        margin-left: 0;
+    }
+
+    .services {
+        padding-bottom: 0;
+    }
+
+    /* Contact */
+
+    .contact {
+        padding-left: 0;
+        max-width: 100%;
+        margin-top: -100px;
+    }
+
+    .contact hr {
+        width: 100%;
+    }
+
+    .contact .texts h1 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact .phone {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    #map {
+        height: 350px;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 70px;
+    }
+
+    /* Footer */
+
+    .footer-section {
+        padding: 10px;
+    }
+}
